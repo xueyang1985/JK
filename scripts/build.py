@@ -186,8 +186,13 @@ def is_cms_site(s):
     return api.startswith("http") and s.get("type") in (0, 1, None)
 
 
+BANNED_API = {
+    "csp_Wogg", "csp_TZFile", "csp_Panta", "csp_Wo4k", "csp_Xpanpan",
+    "csp_Wobg", "csp_Youtube", "csp_Market",
+}
+
 BAD_WORDS = [
-    "分享", "网盘", "盘搜", "云盘", "云搜", "阿里", "夸克", "磁力", "TG", "推送",
+    "玩偶", "团长", "盘Ta", "小盘盘", "表哥", "商店", "Youtube", "分享", "网盘", "盘搜", "云盘", "云搜", "阿里", "夸克", "磁力", "TG", "推送",
     "应用商店", "豆瓣", "YouTube", "KTV", "音悦台", "酷狗", "急救", "配置",
     "书籍", "广播", "听书", "相声", "评书", "工具", "音乐",
 ]
@@ -196,6 +201,8 @@ BAD_WORDS = [
 def is_movie_like(s):
     """判断能否出正片：排除网盘检索、分享、工具类，只留影视站。"""
     name = str(s.get("name") or "")
+    if str(s.get("api") or "") in BANNED_API:
+        return False
     if any(w in name for w in BAD_WORDS):
         return False
     api = str(s.get("api") or "")
@@ -423,6 +430,16 @@ def main():
         with open(os.path.join(ROOT, "tvbox-lite.json"), "w", encoding="utf-8") as f:
             json.dump(lite, f, ensure_ascii=False, indent=1)
     log(f"精简版站点数: {len(lite_sites)}")
+
+    # 极简版：取精简版最前面的 30 个（排序后最前面就是直连 CMS 影视站 + 核心 jar 站），
+    # 搜索时并发压力小，标签能最快刷出来
+    tiny_sites = [dict(s) for s in lite_sites[:30]]
+    tiny = dict(out)
+    tiny["sites"] = tiny_sites
+    if tiny_sites:
+        with open(os.path.join(ROOT, "tvbox-tiny.json"), "w", encoding="utf-8") as f:
+            json.dump(tiny, f, ensure_ascii=False, indent=1)
+    log(f"极简版站点数: {len(tiny_sites)}")
 
     meta = {
         "built_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
