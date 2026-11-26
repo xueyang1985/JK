@@ -180,6 +180,28 @@ def is_jar_site(s):
     return str(s.get("api") or "").startswith("csp_")
 
 
+def is_cms_site(s):
+    """直连 CMS 采集站：api 是 http 地址、type 0/1，这类站最容易搜出正片。"""
+    api = str(s.get("api") or "")
+    return api.startswith("http") and s.get("type") in (0, 1, None)
+
+
+BAD_WORDS = [
+    "分享", "网盘", "盘搜", "云盘", "云搜", "阿里", "夸克", "磁力", "TG", "推送",
+    "应用商店", "豆瓣", "YouTube", "KTV", "音悦台", "酷狗", "急救", "配置",
+    "书籍", "广播", "听书", "相声", "评书", "工具", "音乐",
+]
+
+
+def is_movie_like(s):
+    """判断能否出正片：排除网盘检索、分享、工具类，只留影视站。"""
+    name = str(s.get("name") or "")
+    if any(w in name for w in BAD_WORDS):
+        return False
+    api = str(s.get("api") or "")
+    return api.startswith("http") or api.startswith("csp_") or "/py/" in api
+
+
 def is_js_site(s):
     """依赖远端 .js 脚本（drpy）的站点：盒子上要拉多个 js 及其依赖，最容易失败。"""
     api = str(s.get("api") or "").lower()
@@ -313,7 +335,7 @@ def main():
     # 排序：实测通过的在前 → jar 站（csp_，最稳）在前 → 同类里影视优先、工具类靠后
     sites.sort(key=lambda s: (
         0 if site_dedupe_key(s) in ok_keys else 1,
-        0 if is_jar_site(s) else 1,
+        0 if is_cms_site(s) else (1 if is_jar_site(s) else 2),
         category_rank(s.get("name", "")),
     ))
     log(f"探活结果: {notes}")
@@ -386,6 +408,21 @@ def main():
         with open(os.path.join(ROOT, "tvbox-stable.json"), "w", encoding="utf-8") as f:
             json.dump(stable, f, ensure_ascii=False, indent=1)
     log(f"稳定版站点数: {len(stable_sites)}（去掉了 {len(out['sites']) - len(stable_sites)} 个 js 站）")
+
+    # 精简版：只留能出正片的影视站（直连 CMS + jar 影视站 + py 站），搜索标签少而准
+    lite_sites = []
+    for s in stable_sites:
+        if not is_movie_like(s):
+            continue
+        item = dict(s)
+        item["searchable"] = 1          # 全部显式允许搜索，避免个别壳把它当 0
+        lite_sites.append(item)
+    lite = dict(out)
+    lite["sites"] = lite_sites
+    if lite_sites:
+        with open(os.path.join(ROOT, "tvbox-lite.json"), "w", encoding="utf-8") as f:
+            json.dump(lite, f, ensure_ascii=False, indent=1)
+    log(f"精简版站点数: {len(lite_sites)}")
 
     meta = {
         "built_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
