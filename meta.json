@@ -1,9 +1,10 @@
 {
- "built_at_utc": "2026-11-26T06:54:18Z",
+ "built_at_utc": "2026-11-26T08:03:37Z",
  "main_source": "qist/js",
  "sources_ok": [
   "qist/js",
   "qist/jsm",
+  "qist/ds",
   "clun",
   "jundie",
   "ysc/xiaoma",
@@ -12,11 +13,12 @@
   "apaodh/xhb"
  ],
  "sources_failed": [],
- "sites_before_probe": 410,
- "sites_after_probe": 402,
+ "sites_before_probe": 411,
+ "sites_after_probe": 403,
  "per_source": {
   "qist/js": 298,
   "qist/jsm": 25,
+  "qist/ds": 1,
   "clun": 79,
   "jundie": 2,
   "ysc/xiaoma": 12,
@@ -26,11 +28,11 @@
  },
  "probe_notes": {
   "jar-site": 64,
-  "script": 274,
+  "script": 275,
   "script-fail": 24,
+  "cms-empty": 5,
   "cms": 29,
   "no-api": 8,
-  "cms-empty": 5,
   "cms-timeout": 6
  },
  "spider": {
@@ -39,6 +41,6 @@
   "md5": "e58c3a2975d24db4978065ab895cf297",
   "size": 2912031
  },
- "lives": 35,
+ "lives": 36,
  "parses": 78
 }
