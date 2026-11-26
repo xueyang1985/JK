@@ -1,5 +1,5 @@
 {
- "built_at_utc": "2026-11-26T08:03:37Z",
+ "built_at_utc": "2026-11-26T08:22:33Z",
  "main_source": "qist/js",
  "sources_ok": [
   "qist/js",
@@ -27,13 +27,13 @@
   "apaodh/xhb": 7
  },
  "probe_notes": {
-  "jar-site": 64,
   "script": 275,
+  "jar-site": 64,
   "script-fail": 24,
+  "cms": 28,
   "cms-empty": 5,
-  "cms": 29,
   "no-api": 8,
-  "cms-timeout": 6
+  "cms-timeout": 7
  },
  "spider": {
   "url": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/jar/pg_upgraded.jar",
