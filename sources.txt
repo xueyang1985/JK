@@ -6,6 +6,7 @@
 
 qist/js|https://raw.githubusercontent.com/qist/tvbox/master/js.json
 qist/jsm|https://raw.githubusercontent.com/qist/tvbox/master/jsm.json
+qist/ds|https://raw.githubusercontent.com/qist/tvbox/master/dianshi.json
 clun|https://clun.top/box.json
 jundie|http://home.jundie.top:81/top98.json
 ysc/xiaoma|https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/xiaoma.json
