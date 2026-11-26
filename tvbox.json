@@ -878,6 +878,13 @@
    "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/干饭影视.js"
   },
   {
+   "key": "drpy_js_秋霞影视",
+   "name": "影视 | 秋霞影视[js]",
+   "type": 3,
+   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
+   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/秋霞影视.js"
+  },
+  {
    "key": "drpy_js_阿布影院",
    "name": "影视 | 阿布影院[js]",
    "type": 3,
@@ -997,6 +1004,13 @@
    "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/KOK影院.js"
   },
   {
+   "key": "drpy_js_TVB云播",
+   "name": "影视 | TVB云播[js]",
+   "type": 3,
+   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
+   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/TVB云播.js"
+  },
+  {
    "key": "drpy_js_UrleBird[飞]",
    "name": "影视 | UrleBird[飞][js]",
    "type": 3,
@@ -1044,6 +1058,13 @@
    "type": 3,
    "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
    "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/多瑙影视.js"
+  },
+  {
+   "key": "drpy_js_剧迷su",
+   "name": "影视 | 剧迷su[js]",
+   "type": 3,
+   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
+   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/剧迷su.js"
   },
   {
    "key": "drpy_js_看韩剧",
@@ -1193,6 +1214,13 @@
    "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/大米星球[V2].js"
   },
   {
+   "key": "drpy_js_奈飞狗[V2]",
+   "name": "影视 | 奈飞狗[V2]",
+   "type": 3,
+   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
+   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/奈飞狗[V2].js"
+  },
+  {
    "key": "drpy_js_思古影视[V2]",
    "name": "影视 | 思古影视[V2]",
    "type": 3,
@@ -1247,6 +1275,13 @@
    "type": 3,
    "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
    "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/百忙无果.js"
+  },
+  {
+   "key": "drpy_js_腾云驾雾",
+   "name": "官源 | 腾讯[js]",
+   "type": 3,
+   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
+   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/腾云驾雾.js"
   },
   {
    "key": "drpy_js_奇珍异兽",
@@ -1350,6 +1385,16 @@
    "timeout": 30
   },
   {
+   "key": "drpy_js_ddys",
+   "name": "影视 | 低端影视[js]",
+   "type": 3,
+   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
+   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/ddys.js",
+   "quickSearch": 1,
+   "changeable": 1,
+   "timeout": 30
+  },
+  {
    "key": "drpy_js_libvio",
    "name": "影视 | libvio[js]",
    "type": 3,
@@ -1440,6 +1485,16 @@
    "timeout": 30
   },
   {
+   "key": "drpy_js_趣盤搜",
+   "name": "夸克 | 趣盘搜[js]",
+   "type": 3,
+   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
+   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/funletu.js",
+   "quickSearch": 1,
+   "changeable": 1,
+   "timeout": 30
+  },
+  {
    "key": "drpy_js_meow",
    "name": "影视 | meow搜[js]",
    "type": 3,
@@ -1467,6 +1522,17 @@
    "quickSearch": 0,
    "changeable": 0,
    "ext": "https://raw.githubusercontent.com/qist/tvbox/master/lib/token.json",
+   "timeout": 30
+  },
+  {
+   "key": "drpy_js_磁力熊[磁]",
+   "name": "磁力 | 磁力熊[js]",
+   "type": 3,
+   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 0,
+   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/磁力熊[磁].js",
    "timeout": 30
   },
   {
@@ -1700,6 +1766,13 @@
    "type": 3,
    "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
    "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/AnFuns.js"
+  },
+  {
+   "key": "drpy_js_Anime1动畫",
+   "name": "动漫 | Anime1动畫[js]",
+   "type": 3,
+   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
+   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/Anime1动畫.js"
   },
   {
    "key": "drpy_js_NT动漫",
@@ -1977,6 +2050,16 @@
    "quickSearch": 1,
    "changeable": 1,
    "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/爱看机器人.js"
+  },
+  {
+   "key": "drpy_js_ikanbot2",
+   "name": "影视 | 爱看机器人2[js]",
+   "type": 3,
+   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1,
+   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/ikanbot2.js"
   },
   {
    "key": "drpy_js_jsapi2",
@@ -2287,6 +2370,13 @@
    "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/追剧迷.js"
   },
   {
+   "key": "drpy_js_子子影视",
+   "name": "影视 | 子子影视[js]",
+   "type": 3,
+   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
+   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/子子影视.js"
+  },
+  {
    "key": "drpy_js_大师兄影视",
    "name": "起飞 | 大师兄影视[js]",
    "type": 3,
@@ -2336,6 +2426,13 @@
    "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/555影视[飞].js"
   },
   {
+   "key": "drpy_js_if101[飞]",
+   "name": "起飞 | if101[js]",
+   "type": 3,
+   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
+   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/if101[飞].js"
+  },
+  {
    "key": "drpy_js_KUBO影视[飞]",
    "name": "起飞 | KUBO影视[js]",
    "type": 3,
@@ -2362,6 +2459,13 @@
    "type": 3,
    "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
    "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/欧乐影院[飞].js"
+  },
+  {
+   "key": "drpy_js_小宝影院[飞]",
+   "name": "起飞 | 小宝影院[js]",
+   "type": 3,
+   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
+   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/小宝影院[飞].js"
   },
   {
    "key": "應用商店",
@@ -2427,6 +2531,17 @@
    "changeable": 1
   },
   {
+   "key": "电影天堂",
+   "name": "影视 • 电影天堂",
+   "type": 1,
+   "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "changeable": 1,
+   "playerType": 2
+  },
+  {
    "key": "天涯采集",
    "name": "影视 • 天涯",
    "type": 1,
@@ -2440,6 +2555,40 @@
    "filterable": 1,
    "changeable": 1,
    "playerType": 2
+  },
+  {
+   "key": "量子",
+   "name": "影视 • 量子[直连]",
+   "type": 1,
+   "api": "https://cj.lziapi.com/api.php/provide/vod/",
+   "searchable": 1,
+   "categories": [
+    "动作片",
+    "喜剧片",
+    "爱情片",
+    "科幻片",
+    "恐怖片",
+    "剧情片",
+    "战争片",
+    "国产剧",
+    "香港剧",
+    "韩国剧",
+    "欧美剧",
+    "记录片",
+    "台湾剧",
+    "日本剧",
+    "海外剧",
+    "泰国剧",
+    "大陆综艺",
+    "港台综艺",
+    "日韩综艺",
+    "欧美综艺",
+    "国产动漫",
+    "日韩动漫",
+    "欧美动漫",
+    "港台动漫",
+    "海外动漫"
+   ]
   },
   {
    "key": "非凡",
@@ -2474,6 +2623,39 @@
     "港台动漫",
     "海外动漫"
    ]
+  },
+  {
+   "key": "U酷资源風",
+   "name": "影视 • 尤酷[直连]",
+   "type": 1,
+   "api": "https://api.ukuapi.com/api.php/provide/vod/?ac=list",
+   "searchable": 1,
+   "categories": [
+    "综艺",
+    "动漫",
+    "动作片",
+    "喜剧片",
+    "爱情片",
+    "科幻片",
+    "恐怖片",
+    "剧情片",
+    "战争片",
+    "国产剧",
+    "港澳剧",
+    "日剧",
+    "欧美剧",
+    "动漫电影",
+    "台湾剧",
+    "韩剧",
+    "泰剧",
+    "记录片",
+    "短剧",
+    "奇幻片",
+    "犯罪片"
+   ],
+   "header": {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+   }
   },
   {
    "key": "极速资源",
@@ -2534,6 +2716,34 @@
    "playerType": 2
   },
   {
+   "key": "率率",
+   "name": "影视 • 率率[直连]",
+   "type": 1,
+   "api": "https://suoniapi.com/api.php/provide/vod/?ac=list",
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1,
+   "categories": [
+    "国产剧",
+    "韩剧",
+    "日剧",
+    "港剧",
+    "台剧",
+    "动作片",
+    "喜剧片",
+    "爱情片",
+    "科幻片",
+    "战争片",
+    "恐怖片",
+    "剧情片",
+    "国产动漫",
+    "日韩动漫",
+    "欧美动漫",
+    "大陆综艺",
+    "日韩综艺"
+   ]
+  },
+  {
    "key": "百度",
    "name": "百度",
    "type": 1,
@@ -2558,6 +2768,14 @@
    "header": {
     "User-Agent": "Mozilla/5.0"
    }
+  },
+  {
+   "key": "暴風",
+   "name": "影视 • 暴風[直连]",
+   "type": 1,
+   "api": "https://bfzyapi.com/api.php/provide/vod/?ac=list",
+   "searchable": 1,
+   "changeable": 1
   },
   {
    "key": "Ncat",
@@ -2908,6 +3126,24 @@
    "api": "https://ys.cxkjg.cn/api/provide/vod/"
   },
   {
+   "key": "索尼",
+   "name": "索尼 | 采集 ",
+   "type": 1,
+   "api": "https://suoniapi.com/api.php/provide/vod/",
+   "quickSearch": 1,
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "非凡",
+   "name": "非凡 | 采集",
+   "type": 1,
+   "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
+   "quickSearch": 1,
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
    "key": "无尽",
    "name": "无尽 | 采集",
    "type": 1,
@@ -2926,11 +3162,46 @@
    "changeable": 1
   },
   {
+   "key": "新浪",
+   "name": "新浪 | 采集",
+   "type": 1,
+   "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
+   "quickSearch": 1,
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "速播",
+   "name": "速播 | 采集",
+   "type": 1,
+   "api": "https://subocaiji.com/api.php/provide/vod/",
+   "quickSearch": 1,
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
    "key": "优质",
    "name": "优质 | 采集",
    "type": 1,
    "api": "https://api.yyzy-tv.vip/inc/apijson.php",
    "quickSearch": 1,
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "ikun",
+   "name": "ikun | 采集",
+   "type": 1,
+   "api": "https://ikunzyapi.com/api.php/provide/vod/",
+   "playerType": 1,
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "暴風",
+   "name": "暴風 | 采集",
+   "type": 1,
+   "api": "https://bfzyapi.com/api.php/provide/vod/",
    "searchable": 1,
    "changeable": 1
   },
@@ -2989,6 +3260,17 @@
    "filterable": 1
   },
   {
+   "key": "dbokutv_key",
+   "name": "🐼｜独播库",
+   "type": 3,
+   "api": "https://files.catbox.moe/gd1tos.js",
+   "style": {
+    "type": "rect",
+    "ratio": 1.33
+   },
+   "changeable": 1
+  },
+  {
    "key": "AQY",
    "name": "爱奇艺",
    "type": 3,
@@ -3017,6 +3299,39 @@
    "ext": "https://szyyds.cn/js/930ec.js"
   },
   {
+   "key": "电影天堂",
+   "name": "️天堂┃采集",
+   "type": 1,
+   "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8/",
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1,
+   "filterable": 1,
+   "timeout": 10
+  },
+  {
+   "key": "dr_兔小贝",
+   "name": "📚儿童┃启蒙",
+   "type": 3,
+   "api": "https://git.yylx.win/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
+   "ext": "https://szyyds.cn/tv/jx/兔小贝.js",
+   "style": {
+    "type": "rect",
+    "ratio": 1.597
+   },
+   "searchable": 0,
+   "quickSearch": 0,
+   "changeable": 0
+  },
+  {
+   "key": "量子资源",
+   "name": "量子资源(切)",
+   "type": 1,
+   "api": "http://cj.lziapi.com/api.php/provide/vod/",
+   "searchable": 1,
+   "quickSearch": 1
+  },
+  {
    "key": "红牛资源",
    "name": "红牛资源(切)",
    "type": 1,
@@ -3041,114 +3356,18 @@
    "quickSearch": 1
   },
   {
+   "key": "新浪资源",
+   "name": "新浪资源(切)",
+   "type": 1,
+   "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/",
+   "searchable": 1,
+   "quickSearch": 1
+  },
+  {
    "key": "pansou",
    "api": "http://so.yinpai.xyz/wanpan.php?type=quark|uc|baidu|tianyi|xunlei|123",
    "name": "盘搜|集合",
    "type": 4
-  },
-  {
-   "key": "drpy_js_秋霞影视",
-   "name": "影视 | 秋霞影视[js]",
-   "type": 3,
-   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/秋霞影视.js"
-  },
-  {
-   "key": "drpy_js_TVB云播",
-   "name": "影视 | TVB云播[js]",
-   "type": 3,
-   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/TVB云播.js"
-  },
-  {
-   "key": "drpy_js_剧迷su",
-   "name": "影视 | 剧迷su[js]",
-   "type": 3,
-   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/剧迷su.js"
-  },
-  {
-   "key": "drpy_js_奈飞狗[V2]",
-   "name": "影视 | 奈飞狗[V2]",
-   "type": 3,
-   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/奈飞狗[V2].js"
-  },
-  {
-   "key": "drpy_js_腾云驾雾",
-   "name": "官源 | 腾讯[js]",
-   "type": 3,
-   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/腾云驾雾.js"
-  },
-  {
-   "key": "drpy_js_ddys",
-   "name": "影视 | 低端影视[js]",
-   "type": 3,
-   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/ddys.js",
-   "quickSearch": 1,
-   "changeable": 1,
-   "timeout": 30
-  },
-  {
-   "key": "drpy_js_趣盤搜",
-   "name": "夸克 | 趣盘搜[js]",
-   "type": 3,
-   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/funletu.js",
-   "quickSearch": 1,
-   "changeable": 1,
-   "timeout": 30
-  },
-  {
-   "key": "drpy_js_磁力熊[磁]",
-   "name": "磁力 | 磁力熊[js]",
-   "type": 3,
-   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 0,
-   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/磁力熊[磁].js",
-   "timeout": 30
-  },
-  {
-   "key": "drpy_js_Anime1动畫",
-   "name": "动漫 | Anime1动畫[js]",
-   "type": 3,
-   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/Anime1动畫.js"
-  },
-  {
-   "key": "drpy_js_ikanbot2",
-   "name": "影视 | 爱看机器人2[js]",
-   "type": 3,
-   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/ikanbot2.js"
-  },
-  {
-   "key": "drpy_js_子子影视",
-   "name": "影视 | 子子影视[js]",
-   "type": 3,
-   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/子子影视.js"
-  },
-  {
-   "key": "drpy_js_if101[飞]",
-   "name": "起飞 | if101[js]",
-   "type": 3,
-   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/if101[飞].js"
-  },
-  {
-   "key": "drpy_js_小宝影院[飞]",
-   "name": "起飞 | 小宝影院[js]",
-   "type": 3,
-   "api": "https://raw.githubusercontent.com/qist/tvbox/master/lib/drpy2.min.js",
-   "ext": "https://raw.githubusercontent.com/qist/tvbox/master/js/小宝影院[飞].js"
   },
   {
    "key": "华数",
@@ -3197,51 +3416,6 @@
    }
   },
   {
-   "key": "电影天堂",
-   "name": "影视 • 电影天堂",
-   "type": 1,
-   "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 1,
-   "changeable": 1,
-   "playerType": 2
-  },
-  {
-   "key": "量子",
-   "name": "影视 • 量子[直连]",
-   "type": 1,
-   "api": "https://cj.lziapi.com/api.php/provide/vod/",
-   "searchable": 1,
-   "categories": [
-    "动作片",
-    "喜剧片",
-    "爱情片",
-    "科幻片",
-    "恐怖片",
-    "剧情片",
-    "战争片",
-    "国产剧",
-    "香港剧",
-    "韩国剧",
-    "欧美剧",
-    "记录片",
-    "台湾剧",
-    "日本剧",
-    "海外剧",
-    "泰国剧",
-    "大陆综艺",
-    "港台综艺",
-    "日韩综艺",
-    "欧美综艺",
-    "国产动漫",
-    "日韩动漫",
-    "欧美动漫",
-    "港台动漫",
-    "海外动漫"
-   ]
-  },
-  {
    "key": "索尼",
    "name": "影视 • 索尼[直连]",
    "type": 0,
@@ -3285,39 +3459,6 @@
    "changeable": 1
   },
   {
-   "key": "U酷资源風",
-   "name": "影视 • 尤酷[直连]",
-   "type": 1,
-   "api": "https://api.ukuapi.com/api.php/provide/vod/?ac=list",
-   "searchable": 1,
-   "categories": [
-    "综艺",
-    "动漫",
-    "动作片",
-    "喜剧片",
-    "爱情片",
-    "科幻片",
-    "恐怖片",
-    "剧情片",
-    "战争片",
-    "国产剧",
-    "港澳剧",
-    "日剧",
-    "欧美剧",
-    "动漫电影",
-    "台湾剧",
-    "韩剧",
-    "泰剧",
-    "记录片",
-    "短剧",
-    "奇幻片",
-    "犯罪片"
-   ],
-   "header": {
-    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
-   }
-  },
-  {
    "key": "金蝉采集",
    "name": "影视 • 金蝉",
    "type": 1,
@@ -3346,42 +3487,6 @@
    "filterable": 1,
    "changeable": 1,
    "playerType": 2
-  },
-  {
-   "key": "率率",
-   "name": "影视 • 率率[直连]",
-   "type": 1,
-   "api": "https://suoniapi.com/api.php/provide/vod/?ac=list",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "categories": [
-    "国产剧",
-    "韩剧",
-    "日剧",
-    "港剧",
-    "台剧",
-    "动作片",
-    "喜剧片",
-    "爱情片",
-    "科幻片",
-    "战争片",
-    "恐怖片",
-    "剧情片",
-    "国产动漫",
-    "日韩动漫",
-    "欧美动漫",
-    "大陆综艺",
-    "日韩综艺"
-   ]
-  },
-  {
-   "key": "暴風",
-   "name": "影视 • 暴風[直连]",
-   "type": 1,
-   "api": "https://bfzyapi.com/api.php/provide/vod/?ac=list",
-   "searchable": 1,
-   "changeable": 1
   },
   {
    "key": "荐片",
@@ -3501,42 +3606,6 @@
    "quickSearch": 1
   },
   {
-   "key": "索尼",
-   "name": "索尼 | 采集 ",
-   "type": 1,
-   "api": "https://suoniapi.com/api.php/provide/vod/",
-   "quickSearch": 1,
-   "searchable": 1,
-   "changeable": 1
-  },
-  {
-   "key": "非凡",
-   "name": "非凡 | 采集",
-   "type": 1,
-   "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
-   "quickSearch": 1,
-   "searchable": 1,
-   "changeable": 1
-  },
-  {
-   "key": "新浪",
-   "name": "新浪 | 采集",
-   "type": 1,
-   "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
-   "quickSearch": 1,
-   "searchable": 1,
-   "changeable": 1
-  },
-  {
-   "key": "速播",
-   "name": "速播 | 采集",
-   "type": 1,
-   "api": "https://subocaiji.com/api.php/provide/vod/",
-   "quickSearch": 1,
-   "searchable": 1,
-   "changeable": 1
-  },
-  {
    "key": "樱花",
    "name": "樱花 | 采集",
    "type": 1,
@@ -3550,23 +3619,6 @@
    "type": 1,
    "api": "https://json02.heimuer.xyz/api.php/provide/vod/",
    "quickSearch": 1
-  },
-  {
-   "key": "ikun",
-   "name": "ikun | 采集",
-   "type": 1,
-   "api": "https://ikunzyapi.com/api.php/provide/vod/",
-   "playerType": 1,
-   "searchable": 1,
-   "changeable": 1
-  },
-  {
-   "key": "暴風",
-   "name": "暴風 | 采集",
-   "type": 1,
-   "api": "https://bfzyapi.com/api.php/provide/vod/",
-   "searchable": 1,
-   "changeable": 1
   },
   {
    "key": "旺旺",
@@ -3608,58 +3660,6 @@
    "type": 3,
    "api": "http://home.jundie.top:666/JS/dr_py/libs/drpy.min.js",
    "ext": "http://home.jundie.top:666/JS/dr_py/js/爱看机器人.js"
-  },
-  {
-   "key": "dbokutv_key",
-   "name": "🐼｜独播库",
-   "type": 3,
-   "api": "https://files.catbox.moe/gd1tos.js",
-   "style": {
-    "type": "rect",
-    "ratio": 1.33
-   },
-   "changeable": 1
-  },
-  {
-   "key": "电影天堂",
-   "name": "️天堂┃采集",
-   "type": 1,
-   "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8/",
-   "searchable": 1,
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 10
-  },
-  {
-   "key": "dr_兔小贝",
-   "name": "📚儿童┃启蒙",
-   "type": 3,
-   "api": "https://git.yylx.win/https://raw.githubusercontent.com/fantaiying7/EXT/refs/heads/main/drpy2.min.js",
-   "ext": "https://szyyds.cn/tv/jx/兔小贝.js",
-   "style": {
-    "type": "rect",
-    "ratio": 1.597
-   },
-   "searchable": 0,
-   "quickSearch": 0,
-   "changeable": 0
-  },
-  {
-   "key": "量子资源",
-   "name": "量子资源(切)",
-   "type": 1,
-   "api": "http://cj.lziapi.com/api.php/provide/vod/",
-   "searchable": 1,
-   "quickSearch": 1
-  },
-  {
-   "key": "新浪资源",
-   "name": "新浪资源(切)",
-   "type": 1,
-   "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/",
-   "searchable": 1,
-   "quickSearch": 1
   },
   {
    "key": "tenteng",
