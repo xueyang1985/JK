@@ -27,6 +27,9 @@ jobs:
           python-version: '3.11'
 
       - name: 抓取上游 + 合并去重 + 站点探活
+        env:
+          # 写进配置的 spider jar 地址走加速镜像，盒子下载更快；md5 仍按真实文件计算
+          SPIDER_MIRROR: https://gh-proxy.com/
         run: python scripts/build.py
 
       - name: 提交新配置（无变化则跳过）
