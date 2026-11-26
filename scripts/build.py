@@ -98,15 +98,19 @@ def normalize_config(cfg, base):
 
 
 def fetch_config(src):
-    try:
-        text = strip_json_comments(http_get(src["url"], timeout=TIMEOUT))
-        data = json.loads(text)
-        if not isinstance(data, dict) or not data.get("sites"):
-            raise ValueError("no sites")
-        return src, normalize_config(data, src["base"])
-    except Exception as e:
-        log(f"[跳过] {src['name']}: {e}")
-        return src, None
+    last = None
+    for attempt in range(3):
+        try:
+            text = strip_json_comments(http_get(src["url"], timeout=TIMEOUT))
+            data = json.loads(text)
+            if not isinstance(data, dict) or not data.get("sites"):
+                raise ValueError("no sites")
+            return src, normalize_config(data, src["base"])
+        except Exception as e:
+            last = e
+            time.sleep(2 + attempt * 3)
+    log(f"[跳过] {src['name']}: {last}")
+    return src, None
 
 
 def abs_url(base, path):
@@ -153,6 +157,44 @@ def normalize_site(site, base):
     ext = s.get("ext")
     if isinstance(ext, str) and ext.strip().startswith("./"):
         s["ext"] = abs_url(base, ext)
+    return s
+
+
+MIRROR = os.environ.get("SPIDER_MIRROR", "").strip()
+
+# 类别权重：搜索/换源时先看到能播的影视站，工具类、弹幕类往后排
+CATEGORY_ORDER = [
+    "影视", "动漫", "弹幕", "少儿", "网盘", "磁力", "官源", "起飞", "聚合", "体育", "电视", "视频",
+    "阿里", "夸克",
+    "音频", "MV", "听书", "广播", "相声", "评书",
+    "科普", "书籍", "配置", "搜索", "手机", "应用商店",
+]
+
+
+def category_rank(name):
+    head = name.split("|")[0].strip() if "|" in str(name) else ""
+    return CATEGORY_ORDER.index(head) if head in CATEGORY_ORDER else len(CATEGORY_ORDER)
+
+
+def is_jar_site(s):
+    return str(s.get("api") or "").startswith("csp_")
+
+
+def is_js_site(s):
+    """依赖远端 .js 脚本（drpy）的站点：盒子上要拉多个 js 及其依赖，最容易失败。"""
+    api = str(s.get("api") or "").lower()
+    return api.endswith(".js") or "/lib/" in api and api.endswith(".js")
+
+
+def apply_mirror(site):
+    """把站点里指向 raw.githubusercontent 的 api/ext 换成镜像，盒子加载更稳。"""
+    if not MIRROR:
+        return site
+    s = dict(site)
+    for k in ("api", "ext"):
+        v = s.get(k)
+        if isinstance(v, str) and v.startswith("http") and "raw.githubusercontent.com" in v:
+            s[k] = MIRROR + v
     return s
 
 
@@ -268,6 +310,12 @@ def main():
     rest = [s for s in sites if site_dedupe_key(s) in unknown_keys]
     dropped = before - len(good) - len(rest)
     sites = good + rest
+    # 排序：实测通过的在前 → jar 站（csp_，最稳）在前 → 同类里影视优先、工具类靠后
+    sites.sort(key=lambda s: (
+        0 if site_dedupe_key(s) in ok_keys else 1,
+        0 if is_jar_site(s) else 1,
+        category_rank(s.get("name", "")),
+    ))
     log(f"探活结果: {notes}")
     log(f"实测可用 {len(good)}，未验证保留 {len(rest)}，剔除 {dropped}（合计 {len(sites)}）")
 
@@ -315,7 +363,7 @@ def main():
     out = {
         "spider": spider_field,
         "wallpaper": main_cfg.get("wallpaper") or "",
-        "sites": sites,
+        "sites": [apply_mirror(s) for s in sites],
         "lives": lives,
         "parses": parses,
     }
@@ -328,6 +376,16 @@ def main():
     path = os.path.join(ROOT, "tvbox.json")
     with open(path, "w", encoding="utf-8") as f:
         json.dump(out, f, ensure_ascii=False, indent=1)
+
+    # 稳定版：去掉依赖远端 .js 的 drpy 站点，只留 jar 站、py 站和标准 CMS 站。
+    # 老盒子/网络差的盒子上，这类站最容易「搜索有结果但播放不了」。
+    stable_sites = [s for s in out["sites"] if not is_js_site(s)]
+    stable = dict(out)
+    stable["sites"] = stable_sites
+    if stable_sites:
+        with open(os.path.join(ROOT, "tvbox-stable.json"), "w", encoding="utf-8") as f:
+            json.dump(stable, f, ensure_ascii=False, indent=1)
+    log(f"稳定版站点数: {len(stable_sites)}（去掉了 {len(out['sites']) - len(stable_sites)} 个 js 站）")
 
     meta = {
         "built_at_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()),
