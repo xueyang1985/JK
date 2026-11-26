@@ -1,0 +1,44 @@
+{
+ "built_at_utc": "2026-11-26T05:20:06Z",
+ "main_source": "qist/js",
+ "sources_ok": [
+  "qist/js",
+  "qist/jsm",
+  "clun",
+  "jundie",
+  "ysc/xiaoma",
+  "ysc/wangerxiao",
+  "apaodh/w2x",
+  "apaodh/xhb"
+ ],
+ "sources_failed": [],
+ "sites_before_probe": 410,
+ "sites_after_probe": 402,
+ "per_source": {
+  "qist/js": 298,
+  "qist/jsm": 25,
+  "clun": 79,
+  "jundie": 2,
+  "ysc/xiaoma": 12,
+  "ysc/wangerxiao": 0,
+  "apaodh/w2x": 0,
+  "apaodh/xhb": 7
+ },
+ "probe_notes": {
+  "jar-site": 64,
+  "script": 259,
+  "script-fail": 39,
+  "cms": 15,
+  "no-api": 8,
+  "cms-empty": 2,
+  "cms-timeout": 23
+ },
+ "spider": {
+  "url": "https://raw.githubusercontent.com/qist/tvbox/master/jar/pg_upgraded.jar",
+  "origin": "https://raw.githubusercontent.com/qist/tvbox/master/jar/pg_upgraded.jar",
+  "md5": "e58c3a2975d24db4978065ab895cf297",
+  "size": 2912031
+ },
+ "lives": 35,
+ "parses": 78
+}

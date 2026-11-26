@@ -1,0 +1,14 @@
+# TVBox / OK影视 上游源清单
+# 格式：名称|配置地址[|相对路径基准]
+# 第一行是「主源」：它的 spider jar、lives、parses 作为骨架，后面的源只并入独立站点。
+# 添加或删除某一行后，下一次自动构建立即生效，不需要改代码。
+# 如果某天某个源挂了，构建会自动跳过它，不会影响其它源。
+
+qist/js|https://raw.githubusercontent.com/qist/tvbox/master/js.json
+qist/jsm|https://raw.githubusercontent.com/qist/tvbox/master/jsm.json
+clun|https://clun.top/box.json
+jundie|http://home.jundie.top:81/top98.json
+ysc/xiaoma|https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/xiaoma.json
+ysc/wangerxiao|https://raw.githubusercontent.com/Lightconer/tvbox-ysc-config/main/output/wangerxiao.json
+apaodh/w2x|https://raw.githubusercontent.com/apaodh/apaodh/main/backups/w2x.json
+apaodh/xhb|https://raw.githubusercontent.com/apaodh/apaodh/main/backups/xhb.json
