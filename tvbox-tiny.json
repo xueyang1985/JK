@@ -3,6 +3,17 @@
  "wallpaper": "https://wallpaper-1tg.pages.dev/",
  "sites": [
   {
+   "key": "电影天堂",
+   "name": "影视 • 电影天堂",
+   "type": 1,
+   "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",
+   "searchable": 1,
+   "quickSearch": 1,
+   "filterable": 1,
+   "changeable": 1,
+   "playerType": 2
+  },
+  {
    "key": "天涯采集",
    "name": "影视 • 天涯",
    "type": 1,
@@ -16,6 +27,40 @@
    "filterable": 1,
    "changeable": 1,
    "playerType": 2
+  },
+  {
+   "key": "量子",
+   "name": "影视 • 量子[直连]",
+   "type": 1,
+   "api": "https://cj.lziapi.com/api.php/provide/vod/",
+   "searchable": 1,
+   "categories": [
+    "动作片",
+    "喜剧片",
+    "爱情片",
+    "科幻片",
+    "恐怖片",
+    "剧情片",
+    "战争片",
+    "国产剧",
+    "香港剧",
+    "韩国剧",
+    "欧美剧",
+    "记录片",
+    "台湾剧",
+    "日本剧",
+    "海外剧",
+    "泰国剧",
+    "大陆综艺",
+    "港台综艺",
+    "日韩综艺",
+    "欧美综艺",
+    "国产动漫",
+    "日韩动漫",
+    "欧美动漫",
+    "港台动漫",
+    "海外动漫"
+   ]
   },
   {
    "key": "非凡",
@@ -50,6 +95,39 @@
     "港台动漫",
     "海外动漫"
    ]
+  },
+  {
+   "key": "U酷资源風",
+   "name": "影视 • 尤酷[直连]",
+   "type": 1,
+   "api": "https://api.ukuapi.com/api.php/provide/vod/?ac=list",
+   "searchable": 1,
+   "categories": [
+    "综艺",
+    "动漫",
+    "动作片",
+    "喜剧片",
+    "爱情片",
+    "科幻片",
+    "恐怖片",
+    "剧情片",
+    "战争片",
+    "国产剧",
+    "港澳剧",
+    "日剧",
+    "欧美剧",
+    "动漫电影",
+    "台湾剧",
+    "韩剧",
+    "泰剧",
+    "记录片",
+    "短剧",
+    "奇幻片",
+    "犯罪片"
+   ],
+   "header": {
+    "User-Agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 15_2 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0 Mobile/15E148 Safari/604.1"
+   }
   },
   {
    "key": "极速资源",
@@ -110,6 +188,34 @@
    "playerType": 2
   },
   {
+   "key": "率率",
+   "name": "影视 • 率率[直连]",
+   "type": 1,
+   "api": "https://suoniapi.com/api.php/provide/vod/?ac=list",
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1,
+   "categories": [
+    "国产剧",
+    "韩剧",
+    "日剧",
+    "港剧",
+    "台剧",
+    "动作片",
+    "喜剧片",
+    "爱情片",
+    "科幻片",
+    "战争片",
+    "恐怖片",
+    "剧情片",
+    "国产动漫",
+    "日韩动漫",
+    "欧美动漫",
+    "大陆综艺",
+    "日韩综艺"
+   ]
+  },
+  {
    "key": "百度",
    "name": "百度",
    "type": 1,
@@ -136,11 +242,38 @@
    }
   },
   {
-   "key": "创享",
-   "name": "创享 | 采集",
+   "key": "暴風",
+   "name": "影视 • 暴風[直连]",
    "type": 1,
-   "api": "https://ys.cxkjg.cn/api/provide/vod/",
-   "searchable": 1
+   "api": "https://bfzyapi.com/api.php/provide/vod/?ac=list",
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "360",
+   "name": "360 | 采集",
+   "type": 1,
+   "api": "https://360zy.com/api.php/provide/vod/",
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "索尼",
+   "name": "索尼 | 采集 ",
+   "type": 1,
+   "api": "https://suoniapi.com/api.php/provide/vod/",
+   "quickSearch": 1,
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "非凡",
+   "name": "非凡 | 采集",
+   "type": 1,
+   "api": "https://cj.ffzyapi.com/api.php/provide/vod/",
+   "quickSearch": 1,
+   "searchable": 1,
+   "changeable": 1
   },
   {
    "key": "无尽",
@@ -161,11 +294,46 @@
    "changeable": 1
   },
   {
+   "key": "新浪",
+   "name": "新浪 | 采集",
+   "type": 1,
+   "api": "https://api.xinlangapi.com/xinlangapi.php/provide/vod/",
+   "quickSearch": 1,
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "速播",
+   "name": "速播 | 采集",
+   "type": 1,
+   "api": "https://subocaiji.com/api.php/provide/vod/",
+   "quickSearch": 1,
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
    "key": "优质",
    "name": "优质 | 采集",
    "type": 1,
    "api": "https://api.yyzy-tv.vip/inc/apijson.php",
    "quickSearch": 1,
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "ikun",
+   "name": "ikun | 采集",
+   "type": 1,
+   "api": "https://ikunzyapi.com/api.php/provide/vod/",
+   "playerType": 1,
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
+   "key": "暴風",
+   "name": "暴風 | 采集",
+   "type": 1,
+   "api": "https://bfzyapi.com/api.php/provide/vod/",
    "searchable": 1,
    "changeable": 1
   },
@@ -180,6 +348,25 @@
    "quickSearch": 1,
    "searchable": 1,
    "changeable": 1
+  },
+  {
+   "key": "电影天堂",
+   "name": "️天堂┃采集",
+   "type": 1,
+   "api": "http://caiji.dyttzyapi.com/api.php/provide/vod/from/dyttm3u8/at/m3u8/",
+   "searchable": 1,
+   "quickSearch": 1,
+   "changeable": 1,
+   "filterable": 1,
+   "timeout": 10
+  },
+  {
+   "key": "量子资源",
+   "name": "量子资源(切)",
+   "type": 1,
+   "api": "http://cj.lziapi.com/api.php/provide/vod/",
+   "searchable": 1,
+   "quickSearch": 1
   },
   {
    "key": "红牛资源",
@@ -202,6 +389,14 @@
    "name": "光速资源(切)",
    "type": 1,
    "api": "https://api.guangsuapi.com/api.php/provide/vod/",
+   "searchable": 1,
+   "quickSearch": 1
+  },
+  {
+   "key": "新浪资源",
+   "name": "新浪资源(切)",
+   "type": 1,
+   "api": "http://api.xinlangapi.com/xinlangapi.php/provide/vod/",
    "searchable": 1,
    "quickSearch": 1
   },
@@ -235,162 +430,6 @@
    "playerType": 1,
    "ext": "http://op.ysdqjs.cn$$$null$$$1",
    "searchable": 1
-  },
-  {
-   "key": "追剧",
-   "name": "弹幕 | 追剧[jar]",
-   "type": 3,
-   "api": "csp_TTian",
-   "playerType": 1,
-   "ext": "http://app.kzjtv.com$$$null$$$1",
-   "searchable": 1
-  },
-  {
-   "key": "NanGua",
-   "name": "弹幕 | 南瓜[jar]",
-   "type": 3,
-   "api": "csp_NanGua",
-   "searchable": 1,
-   "changeable": 1,
-   "ext": "null$$$1"
-  },
-  {
-   "key": "Xinshijue",
-   "name": "弹幕 | 新视觉[jar]",
-   "type": 3,
-   "api": "csp_Xinshijue",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/token.json$$$https:/www.80yy3.com/$$$1$$$./lib/wogg.json",
-   "searchable": 1
-  },
-  {
-   "key": "Moli",
-   "name": "弹幕 | HDmoli[jar]",
-   "type": 3,
-   "api": "csp_Moli",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/token.json$$$https:/www.hdmoli.pro/$$$null$$$1$$$./json/moli.json",
-   "searchable": 1
-  },
-  {
-   "key": "Bt0",
-   "name": "弹幕 | 不太灵[jar]",
-   "type": 3,
-   "api": "csp_Bt0",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/token.json$$$null$$$null$$$1",
-   "searchable": 1
-  },
-  {
-   "key": "ddys",
-   "name": "弹幕 | 低端[jar]",
-   "type": 3,
-   "api": "csp_Ddys",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/token.json$$$https:/ddys.pro/$$$proxy$$$1$$$",
-   "searchable": 1
-  },
-  {
-   "key": "美剧迷",
-   "name": "弹幕 | 美剧迷[jar]",
-   "type": 3,
-   "api": "csp_Meijumi",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 30,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/token.json$$$https:/www.meijumi.xyz/$$$null$$$1",
-   "searchable": 1
-  },
-  {
-   "key": "Ppxzy",
-   "name": "弹幕 | 皮皮虾[jar]",
-   "type": 3,
-   "api": "csp_Ppxzy",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/token.json$$$https:/ppxzy.net/$$$null",
-   "timeout": 30,
-   "searchable": 1
-  },
-  {
-   "key": "新6V",
-   "name": "弹幕 | 新6V[jar]",
-   "type": 3,
-   "api": "csp_Xb6v",
-   "searchable": 1,
-   "changeable": 1,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/token.json$$$https:/www.66ss.org$$$1"
-  },
-  {
-   "key": "4KHDR",
-   "name": "弹幕 | 4KHDR[jar]",
-   "type": 3,
-   "api": "csp_FourKHDR",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/token.json$$$http:/127.0.0.1:9978/file/TV/4khdr.txt",
-   "quickSearch": 1,
-   "changeable": 1,
-   "timeout": 60,
-   "searchable": 1
-  },
-  {
-   "key": "校长影视",
-   "name": "弹幕 | 校长[jar]",
-   "type": 3,
-   "api": "csp_XiaoZhang",
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/token.json",
-   "quickSearch": 1,
-   "changeable": 1,
-   "timeout": 30,
-   "searchable": 1
-  },
-  {
-   "key": "Hdhive",
-   "name": "弹幕 | 影巢[jar]",
-   "type": 3,
-   "api": "csp_Hdh",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/token.json$$$https:/hdhive.online$$$noproxy$$$1$$$http:/127.0.0.1:9978/file/TV/hdhive.txt",
-   "searchable": 1
-  },
-  {
-   "key": "Gaoqing",
-   "name": "弹幕 | 高清网[jar]",
-   "type": 3,
-   "api": "csp_Gaoqing",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/token.json$$$https:/gaoqing.la/$$$proxy$$$1",
-   "searchable": 1
-  },
-  {
-   "key": "italkbbtv",
-   "name": "ITalkBB • 外",
-   "type": 3,
-   "api": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/py/ITalkBBTV.py",
-   "searchable": 1,
-   "quickSearch": 1,
-   "filterable": 0,
-   "changeable": 1
   }
  ],
  "lives": [
