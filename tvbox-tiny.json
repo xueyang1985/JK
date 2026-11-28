@@ -293,6 +293,18 @@
    "changeable": 1
   },
   {
+   "key": "艾旦",
+   "name": "艾旦 | 采集",
+   "type": 1,
+   "ext": {
+    "proxy": "proxy"
+   },
+   "api": "https://www.lovedan.net/api.php/provide/vod/",
+   "quickSearch": 1,
+   "searchable": 1,
+   "changeable": 1
+  },
+  {
    "key": "电影天堂",
    "name": "️天堂┃采集",
    "type": 1,
@@ -383,18 +395,6 @@
    "searchable": 1,
    "changeable": 1,
    "ext": "null$$$1"
-  },
-  {
-   "key": "Xinshijue",
-   "name": "弹幕 | 新视觉[jar]",
-   "type": 3,
-   "api": "csp_Xinshijue",
-   "quickSearch": 1,
-   "changeable": 1,
-   "filterable": 1,
-   "timeout": 60,
-   "ext": "https://gh-proxy.com/https://raw.githubusercontent.com/qist/tvbox/master/lib/token.json$$$https:/www.80yy3.com/$$$1$$$./lib/wogg.json",
-   "searchable": 1
   }
  ],
  "lives": [
